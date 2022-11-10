@@ -43,11 +43,11 @@
   <!-- change renderer type from canvaskit to html for crawler-->
   <script>
     
-    const regExp = new RegExp("bot|google|baidu|bing|msn|teoma|slurp|yandex|SiteCheckerBotCrawler", "i");
+    const regExp = new RegExp("bot|google|baidu|bing|msn|teoma|slurp|yandex|crawl|spider|robot", "i");
     if (regExp.test(navigator.userAgent)) {
       window.flutterWebRenderer = "html";
     }
-    alert(navigator.userAgent)
+    console.log("userAgent: " + navigator.userAgent);
   </script>
 </head>
 <body>
