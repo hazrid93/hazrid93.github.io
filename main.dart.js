@@ -8900,15 +8900,15 @@ break
 default:s=7
 break}break
 case 4:s=8
-return A.V($.Zf().nZ(0,".env"),$async$EK)
+return A.V($.Zf().nZ(0,"assets/.env"),$async$EK)
 case 8:s=3
 break
 case 5:case 6:s=9
-return A.V($.Zf().nZ(0,".env."+a),$async$EK)
+return A.V($.Zf().nZ(0,"assets/.env."+a),$async$EK)
 case 9:s=3
 break
 case 7:s=10
-return A.V($.Zf().nZ(0,".env"),$async$EK)
+return A.V($.Zf().nZ(0,"assets/.env"),$async$EK)
 case 10:case 3:return A.Q(null,r)}})
 return A.R($async$EK,r)},
 apk(a){return A.aMK(a)},
