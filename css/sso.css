@@ -1,0 +1,44 @@
+.overlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex !important;
+}
+#airasia_widget   {
+  background-color: #ffffff;
+  max-width: 600px;
+  min-width: 300px;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;  
+}
+#airasia_widget > .aaw-container {
+  /* background-color: rgb(256,256,256);
+  margin-top: 10%;
+  padding: 10px; */
+  width: 100%
+}
+
+#sso-popup{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.ssoWraper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%
+}
+
+.sso-close-btn{
+  /* width: 50px;
+  align-self: flex-end; */
+  align-self: flex-end;
+}

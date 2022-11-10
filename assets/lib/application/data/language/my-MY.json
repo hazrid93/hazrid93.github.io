@@ -1,0 +1,38 @@
+{
+  "characters": "Watak",
+  "episodes": "episod",
+  "locations": "lokasi",
+  "settings": "tetapan",
+  "language": "bahasa",
+  "character_detail": "Butiran Perwatakan",
+  "episode_detail": "Perincian Episod",
+  "location_detail": "Location Detail",
+  "app_language": "App Language",
+  "app_version": "App Version",
+  "theme_mode": "Mod Tema",
+  "abouts": "Tentang",
+  "bahasamalaysia": "BahasaMalaysia",
+  "english": "English",
+  "languageChangeTitle": "Language Change",
+  "languageChangeSubtitle": "You can change application language",
+  "episode": "Episode",
+  "dimension": "Dimension",
+  "air_date": "Air Date",
+  "species": "Species",
+  "gender": "Gender",
+  "type": "Type",
+  "last_know_location": "Last Known Location",
+  "location": "Location",
+  "name": "Name",
+  "information": "Information",
+  "__buildPhase": {
+    "group1": {
+      "config": {
+        "api": "https://rickandmortyapi.com/api/character?page=1"
+      },
+      "data": {
+        "count": "/info/count"
+      }
+    }
+  }
+}
