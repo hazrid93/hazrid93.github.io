@@ -1,0 +1,21 @@
+{
+  "name": "hazrid93-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hazrid Azad's portfolio and server-side Responses API chat proxy",
+  "scripts": {
+    "dev": "node --watch server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check server.mjs && node --check lib/codex-token-manager.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0"
+  }
+}

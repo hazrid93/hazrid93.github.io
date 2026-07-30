@@ -1,0 +1,113 @@
+{
+  "identity": {
+    "name": "Hazrid Azad Bin Shaharudin",
+    "shortName": "Azad",
+    "role": "Senior Software Engineer",
+    "location": "Cheras, Kuala Lumpur, Malaysia",
+    "email": "hazrid93@hotmail.com",
+    "github": "https://github.com/hazrid93",
+    "linkedin": "https://www.linkedin.com/in/hazrid/",
+    "resume": "https://drive.google.com/drive/folders/1C4YiVLf1VQT_ouE4YaKifk5uujB2jW9E",
+    "summary": "Senior software engineer with full-stack experience across backend microservices, web and mobile applications, and cloud-native platforms. Leads delivery and mentors engineers across banking, aviation, and telecom, with hands-on work in LLM tooling, provider integrations, and agentic developer systems."
+  },
+  "career": [
+    {
+      "company": "Maybank",
+      "role": "Senior Software Engineer",
+      "period": "Sep 2024 — Present",
+      "summary": "Core contributor to MAE payment and transfer flows for Cambodia and the Philippines; built React Native performance and framework patches, app security features, and a GrowthBook-configurable Axios cache with bounded LRU eviction."
+    },
+    {
+      "company": "AirAsia MOVE",
+      "role": "Senior Software Engineer",
+      "period": "Oct 2022 — Sep 2024",
+      "summary": "Built the AirAsia Xchange mini app in Flutter and Dart and delivered Spring Boot microservices on Google Cloud plus React and Next.js interfaces across the AirAsia Rewards ecosystem."
+    },
+    {
+      "company": "Boost Connect (Axiata Digital)",
+      "role": "Engineering Team Lead",
+      "period": "May 2020 — Oct 2022",
+      "summary": "Led reviews and mentoring, improved Kubernetes rollouts with Istio on GKE, integrated SonarQube into Jenkins, and helped deliver Boost Game Store from infrastructure to React and Spring Boot product surfaces."
+    },
+    {
+      "company": "Nokia",
+      "role": "Software Engineer",
+      "period": "Oct 2016 — May 2020",
+      "summary": "Implemented service logic and network integrations in Comptel OSS FlowOne, co-designed MPLS L3VPN topology, optimized backend performance, and developed the Network Element Interface."
+    }
+  ],
+  "projects": [
+    {
+      "id": "whatsapp-agent",
+      "title": "Neyobytes WhatsApp Agent",
+      "eyebrow": "AI agent platform",
+      "description": "A multi-tenant WhatsApp bot platform with multi-LLM routing, per-contact sessions, tool calling, document and image understanding, durable memory, and an operations dashboard.",
+      "impact": "15+ LLM providers",
+      "stack": ["JavaScript", "Node.js", "Express", "PostgreSQL", "Redis", "Multi-LLM"],
+      "link": "",
+      "linkLabel": "Private system"
+    },
+    {
+      "id": "jemput",
+      "title": "Neyobytes Jemput",
+      "eyebrow": "Wedding invitation platform",
+      "description": "A Malaysian digital wedding invitation platform with a live drag-and-drop editor, themed invitations, shareable pages, RSVP and guestbook flows, an AI guest chatbot, and Stripe subscriptions.",
+      "impact": "10 visual templates",
+      "stack": ["React 19", "TypeScript", "Express", "Supabase", "Stripe", "Framer Motion"],
+      "link": "https://jemput.neyobytes.com",
+      "linkLabel": "Visit platform"
+    },
+    {
+      "id": "pi-advisor",
+      "title": "Pi Advisor",
+      "eyebrow": "Developer intelligence",
+      "description": "A second-model advisor for pi that reviews main-agent turns, inspects bounded recent context with read-only project tools, stays silent when work is on track, and emits nit, concern, or blocker guidance.",
+      "impact": "Read-only peer review",
+      "stack": ["TypeScript", "Pi SDK", "Agent review", "Bounded context"],
+      "link": "https://github.com/hazrid93/pi-advisor",
+      "linkLabel": "View repository"
+    },
+    {
+      "id": "pi-pool-router",
+      "title": "Pi Pool Router",
+      "eyebrow": "LLM infrastructure",
+      "description": "An in-process LLM backend pooler for pi and omp with a cache-affinity consistent hash ring, EWMA latency filtering, active health checks, circuit breaking, and safe failover.",
+      "impact": "Cache-affinity routing",
+      "stack": ["TypeScript", "Consistent hashing", "EWMA latency", "Health checks"],
+      "link": "https://github.com/hazrid93/pi-pool-router",
+      "linkLabel": "View repository"
+    },
+    {
+      "id": "auto-invoice",
+      "title": "Neyobytes Auto Invoice",
+      "eyebrow": "Business automation",
+      "description": "An AI-assisted Malaysian e-Invoice workflow for SMEs to scan invoices, review official MyInvois fields and code tables, record purchases, and prepare compliant UBL submissions.",
+      "impact": "AI-assisted e-Invoice",
+      "stack": ["TypeScript", "MyInvois", "e-Invoice", "UBL"],
+      "link": "",
+      "linkLabel": "Private system"
+    },
+    {
+      "id": "discord-rhythm",
+      "title": "Discord Rhythm Bot",
+      "eyebrow": "Community tooling",
+      "description": "A TypeScript audio bot with YouTube and SoundCloud support and priority-queue based playback.",
+      "impact": "Priority audio queue",
+      "stack": ["TypeScript", "Discord.js", "YouTube", "SoundCloud"],
+      "link": "https://github.com/hazrid93/discord-rhythm-bot",
+      "linkLabel": "View repository"
+    }
+  ],
+  "skills": {
+    "backend": ["Java", "Spring Boot", "JavaScript", "TypeScript", "Backend microservices", "REST APIs"],
+    "ai": ["Applied AI", "Agentic systems", "LLM tooling", "Provider integrations", "Model routing", "Tool calling"],
+    "platform": ["Google Cloud Platform", "Docker", "Kubernetes", "GKE", "Istio", "Jenkins", "SonarQube"],
+    "frontend": ["React", "Next.js", "React Native", "Flutter", "Dart"],
+    "data": ["MongoDB", "PostgreSQL", "MySQL", "Redis"]
+  },
+  "openSource": {
+    "documentedPullRequests": 91,
+    "repositories": ["react-native-paper", "react-native-share", "cobra", "date-fns", "faker", "es-toolkit", "valibot", "radash"],
+    "profile": "https://github.com/hazrid93"
+  }
+}

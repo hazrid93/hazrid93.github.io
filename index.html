@@ -1,69 +1,340 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050b18" />
+    <meta
+      name="description"
+      content="Hazrid Azad is a senior software engineer building backend microservices, mobile and web products, AI agents, and cloud-native platforms."
+    />
+    <meta property="og:title" content="Hazrid Azad — Systems, agents, and software that move" />
+    <meta
+      property="og:description"
+      content="Senior software engineer based in Kuala Lumpur. Explore selected systems, open-source work, and engineering experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hazrid93.github.io" />
+    <meta property="og:image" content="https://opengraph.githubassets.com/1/hazrid93/hazrid93" />
+    <link rel="canonical" href="https://hazrid93.github.io" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23050b18%22/><path d=%22M24 72 46 23h10l21 49H64l-4-11H41l-5 11Zm21-22h11l-5-15Z%22 fill=%22%235ea7ff%22/></svg>" />
+    <title>Hazrid Azad — Senior Software Engineer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hazrid Azad Bin Shaharudin",
+        "alternateName": "Azad",
+        "jobTitle": "Senior Software Engineer",
+        "url": "https://hazrid93.github.io",
+        "email": "mailto:hazrid93@hotmail.com",
+        "sameAs": ["https://github.com/hazrid93", "https://www.linkedin.com/in/hazrid/"]
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" title="Hazrid Azad home">
+        <span class="brand-mark">A</span>
+        <span>AZAD<span class="brand-slash">/93</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#ask">Ask AI</a>
+      </nav>
+      <a class="header-cta" href="mailto:hazrid93@hotmail.com">
+        <span class="status-dot"></span>
+        Start a conversation
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#ask">Ask AI</a>
+        <a href="mailto:hazrid93@hotmail.com">Contact</a>
+      </nav>
+    </header>
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <main>
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow reveal">
+            <span class="eyebrow-index">01</span>
+            Kuala Lumpur · Senior Software Engineer
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            <span class="title-line">I build systems</span>
+            <span class="title-line title-accent">that keep moving.</span>
+          </h1>
+          <p class="hero-intro reveal">
+            I’m <strong>Hazrid Azad</strong> — a senior software engineer turning complex operations into resilient backend, web, and mobile products, from banking and aviation platforms to AI agents and developer tools.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#work">
+              Explore selected work
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 14 0m-5-5 5 5-5 5" /></svg>
+            </a>
+            <a class="button button-ghost" href="https://drive.google.com/drive/folders/1C4YiVLf1VQT_ouE4YaKifk5uujB2jW9E" target="_blank" rel="noreferrer">
+              Open résumé
+            </a>
+          </div>
+          <ul class="hero-proof reveal">
+            <li><strong>9+</strong><span>years shipping</span></li>
+            <li><strong>91</strong><span>documented PRs</span></li>
+            <li><strong>4</strong><span>industry chapters</span></li>
+          </ul>
+        </div>
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-  <meta name="test">
+        <div class="system-map reveal" role="img" aria-label="Animated map connecting Azad to AI agents, fintech, platforms, and open source">
+          <div class="map-topbar">
+            <span>WORK_GRAPH / LIVE</span>
+            <span class="map-live"><i></i> routing</span>
+          </div>
+          <div class="lottie-orbit" id="lottie-orbit" aria-hidden="true"></div>
+          <div class="map-node map-node-core">
+            <span class="node-ping"></span>
+            <small>CORE</small>
+            <strong>AZAD</strong>
+          </div>
+          <div class="map-node map-node-ai" data-map-node="ai"><small>01</small><strong>AI AGENTS</strong></div>
+          <div class="map-node map-node-fintech" data-map-node="fintech"><small>02</small><strong>FINTECH</strong></div>
+          <div class="map-node map-node-platform" data-map-node="platform"><small>03</small><strong>PLATFORM</strong></div>
+          <div class="map-node map-node-oss" data-map-node="oss"><small>04</small><strong>OPEN SOURCE</strong></div>
+          <div class="map-readout">
+            <span>PACKET</span>
+            <strong id="map-readout-text">agent / tool-call / success</strong>
+          </div>
+        </div>
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+        <div class="hero-scroll" aria-hidden="true"><span></span>Scroll to trace the work</div>
+      </section>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="intro_to_stacked">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+      <section class="ticker" aria-label="Technology focus">
+        <div class="ticker-track">
+          <span>JAVA</span><i></i><span>SPRING BOOT</span><i></i><span>REACT NATIVE</span><i></i><span>LLM AGENTS</span><i></i><span>FLUTTER</span><i></i><span>KUBERNETES</span><i></i><span>GCP</span><i></i><span>PLATFORM ENGINEERING</span><i></i>
+          <span aria-hidden="true">JAVA</span><i aria-hidden="true"></i><span aria-hidden="true">SPRING BOOT</span><i aria-hidden="true"></i><span aria-hidden="true">REACT NATIVE</span><i aria-hidden="true"></i><span aria-hidden="true">LLM AGENTS</span><i aria-hidden="true"></i><span aria-hidden="true">FLUTTER</span><i aria-hidden="true"></i><span aria-hidden="true">KUBERNETES</span><i aria-hidden="true"></i><span aria-hidden="true">GCP</span><i aria-hidden="true"></i><span aria-hidden="true">PLATFORM ENGINEERING</span><i aria-hidden="true"></i>
+        </div>
+      </section>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-index">02</span> Selected systems</p>
+            <h2 id="work-title">Built for the<br /><em>real world.</em></h2>
+          </div>
+          <p class="section-summary">Products where architecture meets operations: live traffic, complex workflows, real users, and systems that cannot simply stop.</p>
+        </div>
 
-  <title>intro_to_stacked</title>
-  <link rel="manifest" href="manifest.json">
+        <div class="project-grid">
+          <article class="project-card project-featured reveal" data-project="whatsapp-agent">
+            <div class="project-visual agent-visual" aria-hidden="true">
+              <div class="agent-thread agent-thread-a"><i></i><i></i><i></i></div>
+              <div class="agent-thread agent-thread-b"><i></i><i></i><i></i></div>
+              <div class="agent-core"><span>15+</span><small>providers</small></div>
+              <div class="tool-pill tool-pill-1">search</div>
+              <div class="tool-pill tool-pill-2">vision</div>
+              <div class="tool-pill tool-pill-3">memory</div>
+              <div class="tool-pill tool-pill-4">voice</div>
+            </div>
+            <div class="project-content">
+              <div class="project-number">01 / AI AGENT PLATFORM</div>
+              <h3>Neyobytes<br />WhatsApp Agent</h3>
+              <p>A multi-tenant agent platform with per-contact sessions, multi-LLM routing, durable memory, tool calling, document intelligence, and an operations cockpit.</p>
+              <div class="project-footer">
+                <ul class="tag-list"><li>JavaScript</li><li>Node.js</li><li>PostgreSQL</li><li>Multi-LLM</li></ul>
+                <span class="project-private">Production system</span>
+              </div>
+            </div>
+          </article>
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '864745662';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+          <article class="project-card reveal" data-project="jemput">
+            <div class="project-number">02 / WEDDING PLATFORM</div>
+            <div class="mini-map invitation-preview" aria-hidden="true"><span class="route-point point-a"></span><span class="route-line"></span><span class="route-point point-b"></span><span class="route-rider">♥</span></div>
+            <h3>Neyobytes Jemput</h3>
+            <p>A Malaysian digital wedding invitation platform with a live editor, themed pages, RSVP and guestbook flows, AI chat, and Stripe subscriptions.</p>
+            <div class="project-footer"><ul class="tag-list"><li>React 19</li><li>Supabase</li><li>Stripe</li></ul><a class="arrow-link" href="https://jemput.neyobytes.com" target="_blank" rel="noreferrer"><span class="sr-only">Visit Neyobytes Jemput</span><span aria-hidden="true">↗</span></a></div>
+          </article>
 
-  <!-- change renderer type from canvaskit to html for crawler-->
-  <script>
-    
-    const regExp = new RegExp("bot|google|baidu|bing|msn|teoma|slurp|yandex|crawl|spider|frog|screaming", "i");
-    if (regExp.test(navigator.userAgent)) {
-      window.flutterWebRenderer = "html";
-    }
-    console.log("userAgent: " + navigator.userAgent);
-  </script>
-</head>
-<body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
-      });
-    });
-  </script>
-</body>
+          <article class="project-card reveal" data-project="pi-advisor">
+            <div class="project-number">03 / DEVELOPER INTELLIGENCE</div>
+            <div class="score-board" aria-hidden="true">
+              <div><span>CONTEXT</span><i class="score-context"></i><b>BOUNDED</b></div>
+              <div><span>ACCESS</span><i class="score-access"></i><b>READ ONLY</b></div>
+              <div><span>SIGNAL</span><i class="score-signal"></i><b>NIT → BLOCKER</b></div>
+            </div>
+            <h3>Pi Advisor</h3>
+            <p>A second model reviews each main-agent turn, inspects bounded context with read-only tools, and sends concise nit, concern, or blocker guidance.</p>
+            <div class="project-footer">
+              <ul class="tag-list"><li>TypeScript</li><li>Pi SDK</li><li>Agent review</li></ul>
+              <a class="arrow-link" href="https://github.com/hazrid93/pi-advisor" target="_blank" rel="noreferrer"><span class="sr-only">View Pi Advisor on GitHub</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-project="pi-pool-router">
+            <div class="project-number">04 / LLM INFRASTRUCTURE</div>
+            <div class="router-visual" aria-hidden="true">
+              <span class="router-input">task</span><i></i>
+              <div class="router-box">ROUTER</div><i></i>
+              <div class="router-models"><b>M1</b><b>M2</b><b>M3</b></div>
+            </div>
+            <h3>Pi Pool Router</h3>
+            <p>Cache-affinity consistent hashing, EWMA latency filtering, active health checks, circuit breaking, and safe failover across LLM backends.</p>
+            <div class="project-footer">
+              <ul class="tag-list"><li>TypeScript</li><li>Hash ring</li><li>EWMA</li></ul>
+              <a class="arrow-link" href="https://github.com/hazrid93/pi-pool-router" target="_blank" rel="noreferrer"><span class="sr-only">View Pi Pool Router on GitHub</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card project-wide reveal" data-project="auto-invoice">
+            <div class="project-number">05 / BUSINESS AUTOMATION</div>
+            <div class="invoice-flow" aria-hidden="true">
+              <div><small>01</small><strong>SCAN</strong></div><i></i>
+              <div><small>02</small><strong>REVIEW</strong></div><i></i>
+              <div><small>03</small><strong>RECORD</strong></div><i></i>
+              <div><small>04</small><strong>SUBMIT</strong></div>
+            </div>
+            <div class="wide-copy"><h3>Neyobytes Auto Invoice</h3><p>AI-assisted Malaysian e-Invoice workflows for scanning invoices, reviewing MyInvois fields, recording purchases, and preparing compliant UBL submissions.</p></div>
+            <ul class="tag-list"><li>TypeScript</li><li>MyInvois</li><li>e-Invoice</li><li>UBL</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-index">03</span> Experience route</p>
+              <h2 id="experience-title">From networks<br />to <em>banking.</em></h2>
+            </div>
+            <p class="section-summary">A career shaped by telecom, cloud platforms, aviation, and banking—and by the discipline required when software carries real financial and operational weight.</p>
+          </div>
+
+          <div class="career-route">
+            <div class="route-axis" aria-hidden="true"><span class="route-packet"></span></div>
+            <article class="career-stop reveal" data-company="Maybank">
+              <div class="career-year">2024—NOW</div><div class="career-node"><span>04</span></div>
+              <div class="career-copy"><p>Maybank</p><h3>Senior Software Engineer</h3><p>Building MAE payment and transfer journeys for Cambodia and the Philippines, alongside React Native performance, security, and framework-level improvements.</p><div class="career-tags"><span>React Native</span><span>Banking</span><span>Performance</span></div></div>
+            </article>
+            <article class="career-stop reveal" data-company="AirAsia MOVE">
+              <div class="career-year">2022—2024</div><div class="career-node"><span>03</span></div>
+              <div class="career-copy"><p>AirAsia MOVE</p><h3>Senior Software Engineer</h3><p>Built the AirAsia Xchange mini app in Flutter and full-stack Rewards features across Spring Boot microservices on GCP and React/Next.js interfaces.</p><div class="career-tags"><span>Flutter</span><span>Spring Boot</span><span>GCP</span></div></div>
+            </article>
+            <article class="career-stop reveal" data-company="Boost Connect">
+              <div class="career-year">2020—2022</div><div class="career-node"><span>02</span></div>
+              <div class="career-copy"><p>Boost Connect · Axiata Digital</p><h3>Engineering Team Lead</h3><p>Led engineers, improved GKE rollout behavior with Istio, strengthened CI security, and helped deliver Boost Game Store end to end.</p><div class="career-tags"><span>Leadership</span><span>Kubernetes</span><span>Istio</span></div></div>
+            </article>
+            <article class="career-stop reveal" data-company="Nokia">
+              <div class="career-year">2016—2020</div><div class="career-node"><span>01</span></div>
+              <div class="career-copy"><p>Nokia</p><h3>Software Engineer</h3><p>Implemented service logic and network integrations in Comptel OSS FlowOne, including MPLS L3VPN topology and the Network Element Interface.</p><div class="career-tags"><span>Java</span><span>OSS</span><span>Telecom</span></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="capabilities section-shell" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-index">04</span> Working set</p>
+            <h2 id="capabilities-title">Breadth without<br /><em>the blur.</em></h2>
+          </div>
+          <p class="section-summary">I move between product intent and implementation detail—choosing tools around constraints instead of forcing every problem into the same stack.</p>
+        </div>
+        <div class="capability-board">
+          <article class="capability reveal"><div class="capability-id">SYS/01</div><h3>Backend systems</h3><p>Microservices and APIs designed for real product and operational constraints.</p><div class="skill-cloud"><span>Java</span><span>Spring Boot</span><span>JavaScript</span><span>TypeScript</span><span>Microservices</span></div></article>
+          <article class="capability reveal"><div class="capability-id">AI/02</div><h3>Agentic software</h3><p>LLM products designed around tools, context, routing, and durable behavior.</p><div class="skill-cloud"><span>Applied AI</span><span>Tool calling</span><span>LLM tooling</span><span>Model routing</span><span>Multi-provider</span></div></article>
+          <article class="capability reveal"><div class="capability-id">PLT/03</div><h3>Cloud platforms</h3><p>Infrastructure and delivery paths that make engineering teams faster.</p><div class="skill-cloud"><span>Docker</span><span>Kubernetes</span><span>GCP</span><span>GKE</span><span>Istio</span><span>Jenkins</span></div></article>
+          <article class="capability reveal"><div class="capability-id">UX/04</div><h3>Product surfaces</h3><p>Responsive web and mobile products connected to production backends.</p><div class="skill-cloud"><span>React</span><span>Next.js</span><span>React Native</span><span>Flutter</span><span>Dart</span></div></article>
+        </div>
+      </section>
+
+      <section class="open-source section-shell reveal" aria-labelledby="oss-title">
+        <div class="oss-number">91</div>
+        <div class="oss-copy">
+          <p class="eyebrow"><span class="eyebrow-index">05</span> Open-source signal</p>
+          <h2 id="oss-title">Small patches.<br /><em>Wide ripples.</em></h2>
+          <p>Documented pull requests across tools used by JavaScript, Go, React Native, and validation communities.</p>
+          <ul class="oss-repos"><li>react-native-paper</li><li>react-native-share</li><li>cobra</li><li>date-fns</li><li>faker</li><li>es-toolkit</li><li>valibot</li><li>radash</li></ul>
+          <a class="button button-ghost" href="https://github.com/hazrid93" target="_blank" rel="noreferrer">Trace the work on GitHub ↗</a>
+        </div>
+      </section>
+
+      <section class="ask section-shell" id="ask" aria-labelledby="ask-title">
+        <div class="ask-intro reveal">
+          <p class="eyebrow"><span class="eyebrow-index">06</span> Portfolio intelligence</p>
+          <h2 id="ask-title">Query the<br /><em>work graph.</em></h2>
+          <p>Ask about my experience, systems, technical strengths, or open-source work. This assistant answers from the same project and résumé data behind this portfolio.</p>
+          <fieldset class="prompt-suggestions">
+            <legend class="sr-only">Suggested questions</legend>
+            <button type="button" data-prompt="What kind of systems has Azad built?">What systems has Azad built?</button>
+            <button type="button" data-prompt="Summarize Azad's fintech experience.">Summarize his fintech experience</button>
+            <button type="button" data-prompt="Which projects best show Azad's AI experience?">Show me his AI work</button>
+            <button type="button" data-prompt="What is Azad's strongest technical stack?">What is his strongest stack?</button>
+          </fieldset>
+          <p class="privacy-note"><span>●</span> Powered through a server-side proxy. API credentials never reach your browser.</p>
+        </div>
+
+        <section class="chat-shell reveal" aria-label="Portfolio chat assistant">
+          <div class="chat-header">
+            <div><span class="chat-avatar">A<span>i</span></span><div><strong>Azad’s Work Graph</strong><small id="chat-status"><i></i> ready to query</small></div></div>
+            <button type="button" id="chat-reset" title="Reset conversation"><span class="sr-only">Reset conversation</span><span aria-hidden="true">↻</span></button>
+          </div>
+          <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-label="Conversation">
+            <div class="message message-assistant">
+              <span class="message-label">WORK GRAPH / 00:00</span>
+              <p>Hi — I can help you navigate Azad’s projects, engineering background, and technical strengths. What would you like to know?</p>
+            </div>
+          </div>
+          <div class="chat-unavailable" id="chat-unavailable" hidden>
+            <strong>Live AI is temporarily offline.</strong>
+            <p>You can still explore the project and experience sections, or reach Azad directly.</p>
+          </div>
+          <form class="chat-form" id="chat-form">
+            <label class="sr-only" for="chat-input">Ask about Azad's work</label>
+            <textarea id="chat-input" rows="1" maxlength="800" placeholder="Ask about projects, skills, or experience…" required></textarea>
+            <button type="submit" id="chat-submit" aria-label="Send message">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m4 4 17 8-17 8 3-8-3-8Zm3 8h14" /></svg>
+            </button>
+          </form>
+          <div class="chat-meta"><span>RESPONSES API</span><span>GROUNDED IN PORTFOLIO DATA</span></div>
+        </section>
+      </section>
+
+      <section class="contact section-shell reveal" aria-labelledby="contact-title">
+        <div class="contact-signal" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="eyebrow"><span class="eyebrow-index">07</span> Open channel</p>
+        <h2 id="contact-title">Have a hard problem?<br /><em>Route it my way.</em></h2>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:hazrid93@hotmail.com">hazrid93@hotmail.com <span>↗</span></a>
+          <div class="social-links"><a href="https://github.com/hazrid93" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/hazrid/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://drive.google.com/drive/folders/1C4YiVLf1VQT_ouE4YaKifk5uujB2jW9E" target="_blank" rel="noreferrer">Résumé ↗</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="#top"><span class="brand-mark">A</span><span>AZAD<span class="brand-slash">/93</span></span></a>
+      <p>Built with intent in Kuala Lumpur · <span id="year"></span></p>
+      <a href="#top">Back to signal ↑</a>
+    </footer>
+
+    <a class="floating-chat" href="#ask" title="Ask the portfolio assistant"><span></span>ASK AI</a>
+
+    <script src="config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
